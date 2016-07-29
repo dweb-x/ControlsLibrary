@@ -30,9 +30,9 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.led1 = new ControlsLib.LED();
-            this.barGraphH1 = new ControlsLib.BarGraphH();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.barGraphH1 = new ControlsLib.BarGraphH();
+            this.led1 = new ControlsLib.LED();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,6 +55,26 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // trackBar1
+            // 
+            this.trackBar1.Location = new System.Drawing.Point(56, 91);
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.trackBar1.Size = new System.Drawing.Size(45, 96);
+            this.trackBar1.TabIndex = 4;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            // 
+            // barGraphH1
+            // 
+            this.barGraphH1.BackColor = System.Drawing.Color.Transparent;
+            this.barGraphH1.Location = new System.Drawing.Point(27, 91);
+            this.barGraphH1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.barGraphH1.MaximumSize = new System.Drawing.Size(16, 96);
+            this.barGraphH1.MinimumSize = new System.Drawing.Size(16, 96);
+            this.barGraphH1.Name = "barGraphH1";
+            this.barGraphH1.Size = new System.Drawing.Size(16, 96);
+            this.barGraphH1.TabIndex = 3;
+            // 
             // led1
             // 
             this.led1.Clickable = true;
@@ -64,26 +84,6 @@
             this.led1.Size = new System.Drawing.Size(16, 16);
             this.led1.State = false;
             this.led1.TabIndex = 0;
-            // 
-            // barGraphH1
-            // 
-            this.barGraphH1.BackColor = System.Drawing.Color.Black;
-            this.barGraphH1.Location = new System.Drawing.Point(27, 91);
-            this.barGraphH1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.barGraphH1.MaximumSize = new System.Drawing.Size(16, 96);
-            this.barGraphH1.MinimumSize = new System.Drawing.Size(16, 96);
-            this.barGraphH1.Name = "barGraphH1";
-            this.barGraphH1.Size = new System.Drawing.Size(16, 96);
-            this.barGraphH1.TabIndex = 3;
-            // 
-            // trackBar1
-            // 
-            this.trackBar1.Location = new System.Drawing.Point(56, 91);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.trackBar1.Size = new System.Drawing.Size(45, 96);
-            this.trackBar1.TabIndex = 4;
-            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
             // Form1
             // 

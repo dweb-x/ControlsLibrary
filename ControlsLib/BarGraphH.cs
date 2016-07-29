@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace ControlsLib
 {
@@ -10,6 +11,7 @@ namespace ControlsLib
         public BarGraphH()
         {
             InitializeComponent();
+            this.BackColor = Color.Transparent;
         }
 
         /// <summary>
@@ -23,9 +25,12 @@ namespace ControlsLib
             }
         }
 
+        /// <summary>
+        /// Sets the LEDs on/off according to value
+        /// </summary>
+        /// <param name="value">Keep in the range 0 -> 1.0</param>
         private void UpdateGraph(float value)
         {
-            //keep in the range 0 -> 1.0
             if (value > 1f)
                 value = 1f;
             else if (value < 0)
