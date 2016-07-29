@@ -17,3 +17,4 @@ c:\users\dave\documents\visual studio 2015\Projects\ControlsLib\ControlsLib\bin\
 c:\users\dave\documents\visual studio 2015\Projects\ControlsLib\ControlsLib\bin\Debug\Resources\LED_GreenOff.png
 c:\users\dave\documents\visual studio 2015\Projects\ControlsLib\ControlsLib\bin\Debug\Resources\LED_GreenOn.png
 c:\users\dave\documents\visual studio 2015\Projects\ControlsLib\ControlsLib\bin\Debug\Resources\LED_RedOn.png
+C:\Users\Dave\documents\visual studio 2015\Projects\ControlsLib\ControlsLib\obj\Debug\ControlsLib.BarGraphH.resources

@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ControlsLib
@@ -22,7 +15,7 @@ namespace ControlsLib
             InitializeComponent();
             //defaults
             clickable = true;
-            _ledColor = LedColor.BLUE;
+            _ledColor = LedColor.RED;
             LoadImages();
             UpdateImageSet();
         }
@@ -60,6 +53,9 @@ namespace ControlsLib
             }
         }
 
+        /// <summary>
+        /// Get or set the LED color.
+        /// </summary>
         public LedColor LedColor
         {
             get
@@ -142,7 +138,9 @@ namespace ControlsLib
             UpdateState();
         }
 
-        //fix this ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ todo
+       /// <summary>
+       /// Loads images from resource file.
+       /// </summary>
         private void LoadImages()
         {
             _imgList = new ImageList();
