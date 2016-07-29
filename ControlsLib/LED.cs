@@ -12,11 +12,10 @@ namespace ControlsLib
 {
     public partial class LED : UserControl
     {
-        private bool state;
-        private bool clickable;
+        private bool state, clickable;
         private LedColor _ledColor;
         private ImageList _imgList;
-        private int onImgIndex, offImgIndex; //index of images
+        private int onImgIndex, offImgIndex; //index's of image pair
 
         public LED()
         {
@@ -26,9 +25,11 @@ namespace ControlsLib
             _ledColor = LedColor.BLUE;
             LoadImages();
             UpdateImageSet();
-            UpdateState();
         }
 
+        /// <summary>
+        /// Change the LED state on/off
+        /// </summary>
         public bool State
         {
             get
@@ -39,11 +40,13 @@ namespace ControlsLib
             set
             {
                 state = value;
-                UpdateImageSet();
                 UpdateState();
             }
         }
 
+        /// <summary>
+        /// When true LED can toggle state when clicked.
+        /// </summary>
         public bool Clickable
         {
             get
@@ -68,22 +71,32 @@ namespace ControlsLib
             {
                 _ledColor = value;
                 UpdateImageSet();
-                UpdateState();
             }
         }
 
+        /// <summary>
+        /// When clickable is enabled the LED is toggled on click.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             if (clickable)
                 Toggle();
         }
 
+        /// <summary>
+        /// Toggles the LED state.
+        /// </summary>
         private void Toggle()
         {  
             state = !state;
             UpdateState();
         }
 
+        /// <summary>
+        /// Call after changing state to switch LED image.
+        /// </summary>
         private void UpdateState()
         {
             if (state)
@@ -96,6 +109,10 @@ namespace ControlsLib
             }
         }
 
+        /// <summary>
+        /// Call to update the LED image pair to the correct 
+        /// color after changing _ledColor.
+        /// </summary>
         private void UpdateImageSet()
         {
             switch (_ledColor)
@@ -121,6 +138,8 @@ namespace ControlsLib
                     offImgIndex = 8;
                     break;
             }
+      
+            UpdateState();
         }
 
         //fix this ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ todo
@@ -129,16 +148,16 @@ namespace ControlsLib
             _imgList = new ImageList();
             try
             {
-                _imgList.Images.Add(Image.FromFile(@"c:\users\dave\documents\visual studio 2015\Projects\ControlsLib\ControlsLib\Resources\LED_AmberOff.png"));
-                _imgList.Images.Add(Image.FromFile(@"c:\users\dave\documents\visual studio 2015\Projects\ControlsLib\ControlsLib\Resources\LED_AmberOn.png"));
-                _imgList.Images.Add(Image.FromFile(@"c:\users\dave\documents\visual studio 2015\Projects\ControlsLib\ControlsLib\Resources\LED_BlueOff.png"));
-                _imgList.Images.Add(Image.FromFile(@"c:\users\dave\documents\visual studio 2015\Projects\ControlsLib\ControlsLib\Resources\LED_BlueOn.png"));
-                _imgList.Images.Add(Image.FromFile(@"c:\users\dave\documents\visual studio 2015\Projects\ControlsLib\ControlsLib\Resources\LED_ClearOff.png"));
-                _imgList.Images.Add(Image.FromFile(@"c:\users\dave\documents\visual studio 2015\Projects\ControlsLib\ControlsLib\Resources\LED_ClearOn.png"));
-                _imgList.Images.Add(Image.FromFile(@"c:\users\dave\documents\visual studio 2015\Projects\ControlsLib\ControlsLib\Resources\LED_GreenOff.png"));
-                _imgList.Images.Add(Image.FromFile(@"c:\users\dave\documents\visual studio 2015\Projects\ControlsLib\ControlsLib\Resources\LED_GreenOn.png"));
-                _imgList.Images.Add(Image.FromFile(@"c:\users\dave\documents\visual studio 2015\Projects\ControlsLib\ControlsLib\Resources\LED_RedOff.png"));
-                _imgList.Images.Add(Image.FromFile(@"c:\users\dave\documents\visual studio 2015\Projects\ControlsLib\ControlsLib\Resources\LED_RedOn.png"));
+                _imgList.Images.Add(Properties.Resources.LED_AmberOff);
+                _imgList.Images.Add(Properties.Resources.LED_AmberOn);
+                _imgList.Images.Add(Properties.Resources.LED_BlueOff);
+                _imgList.Images.Add(Properties.Resources.LED_BlueOn);
+                _imgList.Images.Add(Properties.Resources.LED_ClearOff);
+                _imgList.Images.Add(Properties.Resources.LED_ClearOn);
+                _imgList.Images.Add(Properties.Resources.LED_GreenOff);
+                _imgList.Images.Add(Properties.Resources.LED_GreenOn);
+                _imgList.Images.Add(Properties.Resources.LED_RedOff);
+                _imgList.Images.Add(Properties.Resources.LED_RedOn);
             }
             catch (Exception e)
             {
@@ -146,7 +165,9 @@ namespace ControlsLib
             }
         }
     }
-
+    /// <summary>
+    /// All available LED colors
+    /// </summary>
     public enum LedColor
     {
         RED, GREEN, BLUE, AMBER, CLEAR

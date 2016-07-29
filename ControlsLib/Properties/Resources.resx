@@ -118,7 +118,34 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="LED_AmberOff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\led_amberoff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LED_AmberOn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\led_amberon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LED_BlueOff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\led_blueoff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LED_BlueOn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\led_blueon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LED_ClearOff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\led_clearoff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LED_ClearOn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\led_clearon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LED_GreenOff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\led_greenoff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LED_GreenOn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\led_greenon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="LED_RedOff" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LED_RedOff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LED_RedOn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\led_redon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
