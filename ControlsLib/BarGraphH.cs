@@ -12,6 +12,12 @@ namespace ControlsLib
         {
             InitializeComponent();
             this.BackColor = Color.Transparent;
+            led1.Clickable = false;
+            led2.Clickable = false;
+            led3.Clickable = false;
+            led4.Clickable = false;
+            led5.Clickable = false;
+            led6.Clickable = false;
         }
 
         /// <summary>

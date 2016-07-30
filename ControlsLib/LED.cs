@@ -14,8 +14,8 @@ namespace ControlsLib
         {
             InitializeComponent();
             //defaults
-            clickable = true;
             _ledColor = LedColor.RED;
+            clickable = false;
             LoadImages();
             UpdateImageSet();
         }

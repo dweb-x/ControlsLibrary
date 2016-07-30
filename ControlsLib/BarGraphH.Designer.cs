@@ -38,6 +38,7 @@
             // 
             // led6
             // 
+            this.led6.BackColor = System.Drawing.Color.Transparent;
             this.led6.Clickable = true;
             this.led6.LedColor = ControlsLib.LedColor.RED;
             this.led6.Location = new System.Drawing.Point(0, 0);
@@ -49,9 +50,10 @@
             // 
             // led5
             // 
+            this.led5.BackColor = System.Drawing.Color.Transparent;
             this.led5.Clickable = true;
             this.led5.LedColor = ControlsLib.LedColor.AMBER;
-            this.led5.Location = new System.Drawing.Point(0, 17);
+            this.led5.Location = new System.Drawing.Point(0, 16);
             this.led5.Margin = new System.Windows.Forms.Padding(0, 1, 0, 1);
             this.led5.Name = "led5";
             this.led5.Size = new System.Drawing.Size(16, 16);
@@ -60,9 +62,10 @@
             // 
             // led4
             // 
+            this.led4.BackColor = System.Drawing.Color.Transparent;
             this.led4.Clickable = true;
             this.led4.LedColor = ControlsLib.LedColor.GREEN;
-            this.led4.Location = new System.Drawing.Point(0, 33);
+            this.led4.Location = new System.Drawing.Point(0, 32);
             this.led4.Margin = new System.Windows.Forms.Padding(0, 1, 0, 1);
             this.led4.Name = "led4";
             this.led4.Size = new System.Drawing.Size(16, 16);
@@ -71,9 +74,10 @@
             // 
             // led3
             // 
+            this.led3.BackColor = System.Drawing.Color.Transparent;
             this.led3.Clickable = true;
             this.led3.LedColor = ControlsLib.LedColor.GREEN;
-            this.led3.Location = new System.Drawing.Point(0, 49);
+            this.led3.Location = new System.Drawing.Point(0, 48);
             this.led3.Margin = new System.Windows.Forms.Padding(0, 1, 0, 1);
             this.led3.Name = "led3";
             this.led3.Size = new System.Drawing.Size(16, 16);
@@ -82,9 +86,10 @@
             // 
             // led2
             // 
+            this.led2.BackColor = System.Drawing.Color.Transparent;
             this.led2.Clickable = true;
             this.led2.LedColor = ControlsLib.LedColor.GREEN;
-            this.led2.Location = new System.Drawing.Point(0, 65);
+            this.led2.Location = new System.Drawing.Point(0, 64);
             this.led2.Margin = new System.Windows.Forms.Padding(0, 1, 0, 1);
             this.led2.Name = "led2";
             this.led2.Size = new System.Drawing.Size(16, 16);
@@ -93,9 +98,10 @@
             // 
             // led1
             // 
+            this.led1.BackColor = System.Drawing.Color.Transparent;
             this.led1.Clickable = true;
             this.led1.LedColor = ControlsLib.LedColor.GREEN;
-            this.led1.Location = new System.Drawing.Point(0, 81);
+            this.led1.Location = new System.Drawing.Point(0, 80);
             this.led1.Margin = new System.Windows.Forms.Padding(0, 1, 0, 1);
             this.led1.Name = "led1";
             this.led1.Size = new System.Drawing.Size(16, 16);

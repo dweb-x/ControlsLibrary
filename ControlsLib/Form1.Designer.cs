@@ -31,8 +31,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.barGraphH1 = new ControlsLib.BarGraphH();
             this.led1 = new ControlsLib.LED();
+            this.barGraphH1 = new ControlsLib.BarGraphH();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,19 +64,9 @@
             this.trackBar1.TabIndex = 4;
             this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
-            // barGraphH1
-            // 
-            this.barGraphH1.BackColor = System.Drawing.Color.Transparent;
-            this.barGraphH1.Location = new System.Drawing.Point(27, 91);
-            this.barGraphH1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.barGraphH1.MaximumSize = new System.Drawing.Size(16, 96);
-            this.barGraphH1.MinimumSize = new System.Drawing.Size(16, 96);
-            this.barGraphH1.Name = "barGraphH1";
-            this.barGraphH1.Size = new System.Drawing.Size(16, 96);
-            this.barGraphH1.TabIndex = 3;
-            // 
             // led1
             // 
+            this.led1.BackColor = System.Drawing.Color.Transparent;
             this.led1.Clickable = true;
             this.led1.LedColor = ControlsLib.LedColor.BLUE;
             this.led1.Location = new System.Drawing.Point(42, 29);
@@ -85,13 +75,24 @@
             this.led1.State = false;
             this.led1.TabIndex = 0;
             // 
+            // barGraphH1
+            // 
+            this.barGraphH1.BackColor = System.Drawing.Color.Transparent;
+            this.barGraphH1.Location = new System.Drawing.Point(9, 91);
+            this.barGraphH1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.barGraphH1.MaximumSize = new System.Drawing.Size(16, 96);
+            this.barGraphH1.MinimumSize = new System.Drawing.Size(16, 96);
+            this.barGraphH1.Name = "barGraphH1";
+            this.barGraphH1.Size = new System.Drawing.Size(16, 96);
+            this.barGraphH1.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(210, 457);
-            this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.barGraphH1);
+            this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.led1);
@@ -109,8 +110,8 @@
         private LED led1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private BarGraphH barGraphH1;
         private System.Windows.Forms.TrackBar trackBar1;
+        private BarGraphH barGraphH1;
     }
 }
 
