@@ -31,8 +31,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.led1 = new ControlsLib.LED();
             this.barGraphH1 = new ControlsLib.BarGraphH();
+            this.led1 = new ControlsLib.LED();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,17 +64,6 @@
             this.trackBar1.TabIndex = 4;
             this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
-            // led1
-            // 
-            this.led1.BackColor = System.Drawing.Color.Transparent;
-            this.led1.Clickable = true;
-            this.led1.LedColor = ControlsLib.LedColor.BLUE;
-            this.led1.Location = new System.Drawing.Point(42, 29);
-            this.led1.Name = "led1";
-            this.led1.Size = new System.Drawing.Size(16, 16);
-            this.led1.State = false;
-            this.led1.TabIndex = 0;
-            // 
             // barGraphH1
             // 
             this.barGraphH1.BackColor = System.Drawing.Color.Transparent;
@@ -85,6 +74,19 @@
             this.barGraphH1.Name = "barGraphH1";
             this.barGraphH1.Size = new System.Drawing.Size(16, 96);
             this.barGraphH1.TabIndex = 5;
+            // 
+            // led1
+            // 
+            this.led1.BackColor = System.Drawing.Color.Transparent;
+            this.led1.Clickable = true;
+            this.led1.LedColor = ControlsLib.LedColor.BLUE;
+            this.led1.Location = new System.Drawing.Point(42, 29);
+            this.led1.Name = "led1";
+            this.led1.Size = new System.Drawing.Size(16, 16);
+            this.led1.State = false;
+            this.led1.TabIndex = 0;
+            this.led1.OnLedClick += new System.EventHandler<System.EventArgs>(this.led1_Click);
+            this.led1.Load += new System.EventHandler(this.led1_Load);
             // 
             // Form1
             // 

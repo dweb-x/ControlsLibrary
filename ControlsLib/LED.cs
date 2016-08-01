@@ -20,6 +20,8 @@ namespace ControlsLib
             UpdateImageSet();
         }
 
+        public event EventHandler<EventArgs> OnLedClick = delegate { };
+
         /// <summary>
         /// Change the LED state on/off
         /// </summary>
@@ -78,7 +80,11 @@ namespace ControlsLib
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             if (clickable)
+            {
                 Toggle();
+                OnLedClick(this, EventArgs.Empty);
+            }
+                
         }
 
         /// <summary>

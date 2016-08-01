@@ -38,5 +38,15 @@ namespace ControlsLib
         {
             barGraphH1.Value = (float)trackBar1.Value / 10;
         }
+
+        private void led1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Led Clicked");
+        }
+
+        private void led1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
